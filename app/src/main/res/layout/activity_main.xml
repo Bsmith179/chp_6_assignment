@@ -13,6 +13,7 @@
         android:layout_width="240dp"
         android:layout_height="250dp"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         android:contentDescription="@string/sad"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,13 +45,14 @@
         android:layout_width="240dp"
         android:layout_height="250dp"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         android:contentDescription="@string/cats"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774"
+        app:layout_constraintVertical_bias="0.763"
         app:srcCompat="@drawable/cats" />
 
     <Button
