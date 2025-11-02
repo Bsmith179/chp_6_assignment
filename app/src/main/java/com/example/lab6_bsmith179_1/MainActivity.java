@@ -32,12 +32,30 @@ public class MainActivity extends AppCompatActivity {
         button2 = (Button) findViewById(R.id.btCats);
         button1.setOnClickListener(Sad);
         button2.setOnClickListener(Cats);
+        mpSad = new MediaPlayer();
+        mpSad = MediaPlayer.create(this,R.raw.sad);
+        mpCats = new MediaPlayer();
+        mpCats = MediaPlayer.create(this,R.raw.cats);
+        playing = 0;
     }
     Button.OnClickListener Sad = new Button.OnClickListener(){
 
         @Override
         public void onClick(View v) {
-
+            switch(playing) {
+                case 0:
+                    mpSad.start();
+                    playing = 1;
+                    button1.setText("PAUSE SAD SONG");
+                    button2.setVisibility(View.INVISIBLE);
+                    break;
+                case 1:
+                    mpSad.pause();
+                    playing = 0;
+                    button1.setText("PLAY SAD SONG");
+                    button2.setVisibility(View.VISIBLE);
+                    break;
+            }
         }
     };
 
@@ -45,7 +63,20 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-
+            switch(playing) {
+                case 0:
+                    mpCats.start();
+                    playing = 1;
+                    button2.setText("PAUSE CATS SONG");
+                    button1.setVisibility(View.INVISIBLE);
+                    break;
+                case 1:
+                    mpCats.pause();
+                    playing = 0;
+                    button2.setText("PLAY CATS SONG");
+                    button1.setVisibility(View.VISIBLE);
+                    break;
+            }
         }
     };
 
