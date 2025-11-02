@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Lab6_Bsmith179-1</string>
+    <string name="tvSplash">Music To Break Down To</string>
+    <string name="sad">Depression Meme of a salesman trying to sell a man a water heater with the text \"Salesman: *Slaps top of water heater* With this bad boy you can cry on the shower floor for 45 minutes straight\"</string>
+    <string name="cats">Depression Meme of skeleton cuddling 3 orange cats with the text \"When you\'re dead inside and sick of life but at least there are cats\"</string>
+    <string name="btSad">PLAY SAD SONG</string>
+    <string name="btCats">PLAY CATS SONG</string>
+    <string name="tvTag1">You can easily return to the past</string>
+    <string name="tvTag2">But no one is there anymore</string>
 </resources>
